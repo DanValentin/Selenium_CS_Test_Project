@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SeleniumTestProject.PageObjects
+namespace Selenium_CS_Test_Project.PageObjects
 {
     partial class HomePage
     {
@@ -18,8 +18,9 @@ namespace SeleniumTestProject.PageObjects
 
         private IWebElement AuthenticationButton => _driver.FindElement(By.XPath("//a[text()='Autentificare']"));
         private IWebElement SignUpButton => _driver.FindElement(By.XPath("//a[text()='Înscriere']"));
+        public IWebElement DeconectareButton => _driver.FindElement(By.XPath("//a[text()='Deconectare']"));
 
-
+        private IWebElement VeziDetaliiButon => _driver.FindElement(By.CssSelector(".btn-primary"));
 
     }
 }

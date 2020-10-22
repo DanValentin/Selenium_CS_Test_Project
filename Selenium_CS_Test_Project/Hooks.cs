@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SeleniumTestProject
+namespace Selenium_CS_Test_Project
 {
     public class Hooks
     {
@@ -16,14 +16,20 @@ namespace SeleniumTestProject
         public void Setup()
         {
             Driver = new ChromeDriver();
+            Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
             Driver.Manage().Window.Maximize();
+
+
             Driver.Navigate().GoToUrl("http://demosite.casqad.org/");
         }
 
         [TearDown]
         public void TearDown()
         {
-            Driver.Quit();
+            if (Driver != null)
+            {
+                 Driver.Quit();
+            }
         }
     }
 }
