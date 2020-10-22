@@ -10,7 +10,7 @@ using Selenium_CS_Test_Project.PageObjects;
 namespace Selenium_CS_Test_Project
 {
     [TestFixture]
-    class Tests : Hooks
+    class TestGoolge : Hooks
     {
         [Test, Category("Login")]
         public void MyFirstTest()
