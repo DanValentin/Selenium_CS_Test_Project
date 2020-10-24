@@ -21,6 +21,7 @@ namespace Selenium_CS_Test_Project.PageObjects
         public IWebElement DeconectareButton => _driver.FindElement(By.XPath("//a[text()='Deconectare']"));
         private IWebElement VeziDetaliiButon => _driver.FindElement(By.CssSelector(".btn-primary"));
         private IWebElement ButonDeconectare => _driver.FindElement(By.XPath("//a[contains(text(),'Deconectare')]"));
+        private IWebElement LinkCatrePaginaCuLaptopuri => _driver.FindElement(By.XPath("//*[@id='collapsibleNavbar']/ul[1]/li[1]/a"));
 
 
     public void GoToRegisterPage()
@@ -41,6 +42,9 @@ namespace Selenium_CS_Test_Project.PageObjects
         {
             return element.Displayed;
         }
-
+        public void NavigateToLaptopsPage()
+        {
+            LinkCatrePaginaCuLaptopuri.Click();
+        }
     }
 }

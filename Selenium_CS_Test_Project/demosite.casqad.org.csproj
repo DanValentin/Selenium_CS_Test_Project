@@ -50,6 +50,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="demosite.casqad.org\PageObjects\Pages\LaptopPage.cs" />
     <Compile Include="demosite.casqad.org\PageObjects\Pages\RegisterPage.cs" />
     <Compile Include="Hooks.cs" />
     <Compile Include="demosite.casqad.org\Test.demosite.casqad.org.cs" />
