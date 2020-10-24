@@ -11,7 +11,7 @@ using Selenium_CS_Test_Project.demosite.casqad.org.PageObjects.Actions;
 namespace Selenium_CS_Test_Project
 {
     [TestFixture]
-    class TestGoolge : Hooks
+    class TestDemoSite : Hooks
     {
         [Test, Category("Login")]
         public void SignUpIntoApplication()
@@ -22,9 +22,9 @@ namespace Selenium_CS_Test_Project
             homePage.GoToRegisterPage();
             //Act
             RegisterPage registerPage = new RegisterPage(Driver);
-            registerPage.RegisterUser("DanPopa", "test2@gmail.com", "0123654789", "Bucuresti sector4", "123456");
+            registerPage.RegisterUser("DanPopa", "test3@gmail.com", "0123654789", "Bucuresti sector4", "123456");
             registerPage.ClickOnSubmitButton();
-            loginPage.AuthenticateUser("test2@gmail.com", "123456");
+            loginPage.AuthenticateUser("test3@gmail.com", "123456");
 
 
             //Assert
