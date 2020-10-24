@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using NUnit.Framework;
 using System.Threading;
 using Selenium_CS_Test_Project.PageObjects;
+using Selenium_CS_Test_Project.demosite.casqad.org.PageObjects.Actions;
 
 namespace Selenium_CS_Test_Project
 {
@@ -13,20 +14,23 @@ namespace Selenium_CS_Test_Project
     class TestGoolge : Hooks
     {
         [Test, Category("Login")]
-        public void MyFirstTest()
+        public void SignUpIntoApplication()
         {
             // Arrante
             HomePage homePage = new HomePage(Driver);
-            homePage.GoToAuthentication();
-
-            //Act
             LoginPage loginPage = new LoginPage(Driver);
-            loginPage.AuthenticateUser("admin.test3@gmail.com", "password123");
+            homePage.GoToRegisterPage();
+            //Act
+            RegisterPage registerPage = new RegisterPage(Driver);
+            registerPage.RegisterUser("DanPopa", "test2@gmail.com", "0123654789", "Bucuresti sector4", "123456");
+            registerPage.ClickOnSubmitButton();
+            loginPage.AuthenticateUser("test2@gmail.com", "123456");
+
 
             //Assert
             Assert.IsTrue(homePage.VerifyElementIsDisplayed(homePage.DeconectareButton));
 
-            Thread.Sleep(1000);
+           
         }
 
     }

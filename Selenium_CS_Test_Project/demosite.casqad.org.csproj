@@ -50,15 +50,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="demosite.casqad.org\PageObjects\Pages\RegisterPage.cs" />
     <Compile Include="Hooks.cs" />
     <Compile Include="demosite.casqad.org\Test.demosite.casqad.org.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Compile Include="demosite.casqad.org\PageObjects\Actions\HomePage.Actions.cs" />
-    <Compile Include="demosite.casqad.org\PageObjects\Locators\HomePage.Locators.cs" />
-    <Compile Include="demosite.casqad.org\PageObjects\Actions\LoginPage.Actions.cs" />
-    <Compile Include="demosite.casqad.org\PageObjects\Locators\LoginPage.Locators.cs" />
+    <Compile Include="demosite.casqad.org\PageObjects\Pages\HomePage.cs" />
+    <Compile Include="demosite.casqad.org\PageObjects\Pages\LoginPage.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

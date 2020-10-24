@@ -8,6 +8,14 @@ namespace Selenium_CS_Test_Project.PageObjects
     {
         private IWebDriver _driver;
         private WebDriverWait _driverWait;
+
+
+        private IWebElement EmailFieldTextBox =>_driverWait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//input[@type='email']")));
+        private IWebElement PasswordFieldTextBox => _driverWait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//input[@type='password']")));
+        private IWebElement AuthenticateButton => _driverWait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//button[@type='submit']")));
+
+
+
         public LoginPage(IWebDriver driver)
         {
             _driver = driver;
@@ -27,7 +35,10 @@ namespace Selenium_CS_Test_Project.PageObjects
             AuthenticateButton.Click();
 
         }
-
+        public bool VerifyIfSuccessMessageIsDisplayed(IWebElement element)
+        {
+            return element.Displayed;
+        }
 
     }
 }
