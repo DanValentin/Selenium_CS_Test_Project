@@ -31,6 +31,7 @@ namespace Selenium_CS_Test_Project.PageObjects
         {
             EmailFieldTextBox.Click();
             EmailFieldTextBox.SendKeys(user);
+            PasswordFieldTextBox.Click();
             PasswordFieldTextBox.SendKeys(password);
             AuthenticateButton.Click();
 
