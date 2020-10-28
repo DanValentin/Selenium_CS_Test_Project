@@ -26,7 +26,9 @@ namespace GoogleHomeWork
 
             //Assert
             Assert.IsTrue(! homePage.ImageSelectedFrame.Displayed);
+        
         }
-        }
+        
     }
+}
 
