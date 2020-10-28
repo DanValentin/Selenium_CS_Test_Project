@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demosite.casqad.org", "Sele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleHomeWork", "GoogleHomeWork\GoogleHomeWork.csproj", "{71284FCC-1D2F-4EDC-B6CF-7D854857D5FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoqa.com_automation-practice-form", "demoqa.com_automation-practice-form\demoqa.com_automation-practice-form.csproj", "{D070F496-B86D-4A71-AB27-427AD39CB769}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{71284FCC-1D2F-4EDC-B6CF-7D854857D5FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71284FCC-1D2F-4EDC-B6CF-7D854857D5FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71284FCC-1D2F-4EDC-B6CF-7D854857D5FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D070F496-B86D-4A71-AB27-427AD39CB769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D070F496-B86D-4A71-AB27-427AD39CB769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D070F496-B86D-4A71-AB27-427AD39CB769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D070F496-B86D-4A71-AB27-427AD39CB769}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
