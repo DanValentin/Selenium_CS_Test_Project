@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoqa.com_text-box", "demo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teatrulsicaalexandrescu.ro", "teatrulsicaalexandrescu.ro\teatrulsicaalexandrescu.ro.csproj", "{D7206A77-AA36-4038-A32F-65C8AA512852}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Untold.com", "Untold.com\Untold.com.csproj", "{D6656966-87DF-4ABB-AA81-BC4148AA322F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D7206A77-AA36-4038-A32F-65C8AA512852}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7206A77-AA36-4038-A32F-65C8AA512852}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7206A77-AA36-4038-A32F-65C8AA512852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6656966-87DF-4ABB-AA81-BC4148AA322F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6656966-87DF-4ABB-AA81-BC4148AA322F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6656966-87DF-4ABB-AA81-BC4148AA322F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6656966-87DF-4ABB-AA81-BC4148AA322F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

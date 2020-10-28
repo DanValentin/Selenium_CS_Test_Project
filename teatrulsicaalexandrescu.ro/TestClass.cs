@@ -24,7 +24,7 @@ namespace teatrulsicaalexandrescu.ro
             actorPage.ClickOnSpectacolButton();
 
             //Assert
-            //Assert.IsTrue(!homePage.ImageSelectedFrame.Displayed);
+            Assert.IsTrue(actorPage.VerifyElementIsDisplayed(actorPage.CumparaBileteButton));
 
         }
 
